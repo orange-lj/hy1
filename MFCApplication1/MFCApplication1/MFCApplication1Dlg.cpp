@@ -47,7 +47,7 @@ BOOL CMFCApplication1Dlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// 设置小图标
 
 	// TODO: 在此添加额外的初始化代码
-	m_list.SetExtendedStyle();
+	m_list.SetExtendedStyle(LVS_EX_GRIDLINES | LVS_EX_FULLROWSELECT);
 
 	m_list.InsertColumn(0, L"IP地址", LVCFMT_CENTER, 300);
 	m_list.InsertColumn(1, L"端口号", LVCFMT_CENTER, 300);
